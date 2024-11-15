@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TextFieldValueExample"
+rootProject.name = "TextExample"
 include(":app")
  
