@@ -9,5 +9,5 @@ Reference: https://developer.android.com/develop/ui/compose/text
 
 <p align="center">
   <h1>Screenshot</h1>
-  <img src="https://github.com/BoTime/learn-jetpack-compose/blob/main/TextFieldValueExample/TextExample.png" width="350" title="Screenshot">
+  <img src="TextExample.png" width="350" title="Screenshot">
 </p>
