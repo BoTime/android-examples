@@ -3,3 +3,4 @@ One of the best ways to learn a new programming framework is to break it down in
 
 # Table of contents
 1. [TextExample](TextExample)
+1. [LayoutExample](LayoutExample)
