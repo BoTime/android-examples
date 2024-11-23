@@ -3,8 +3,6 @@ package com.botime.learning.layoutexample
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.BottomNavigation
@@ -40,12 +38,12 @@ fun App() {
     Scaffold(
         bottomBar = { MyBottomNavigation(navController = navController) }) {
         Box(Modifier.padding(it)) {
-            NavHost(navController = navController, startDestination = ColumnScreen.route) {
+            NavHost(navController = navController, startDestination = StaggeredGridScreen.route) {
                 composable(ColumnScreen.route) {
                     ColumnScreen()
                 }
-                composable(RowScreen.route) {
-                    RowScreen()
+                composable(StaggeredGridScreen.route) {
+                    StaggeredGridScreen()
                 }
             }
         }
@@ -56,7 +54,7 @@ fun App() {
 fun MyBottomNavigation(navController: NavController) {
     val destinationList = listOf(
         ColumnScreen,
-        RowScreen
+        StaggeredGridScreen
     )
     var selectedTabIndex by rememberSaveable {
         mutableStateOf(0)

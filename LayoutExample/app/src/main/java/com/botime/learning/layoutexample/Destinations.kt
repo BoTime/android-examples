@@ -17,9 +17,8 @@ object ColumnScreen: Destinations {
     override val icon = Icons.Rounded.Coffee
 }
 
-object RowScreen: Destinations {
-    override val route = "Row"
+object StaggeredGridScreen: Destinations {
+    override val route = "Grid"
     override val icon = Icons.Rounded.Memory
 }
-
 
