@@ -4,10 +4,11 @@ In my Software Systems Engineering class years ago, my favorite teacher Paul Ngu
 
 I want to continue learning through this approach.
 
+WIP: All examples will be moved into the AndroidExamples folder for app modularization.
+
 # Table of contents
 1. Miscs  
   1.1 [Dynamically change the icon](ChangeIconExample)
 2. Jetpack Compose  
-  2.1 [Examples of text input, custom font, styling text, etc](TextExample)  
-  2.2 [Examples of Row, Column, Grid, LazyGrid layouts, etc](LayoutExample)
+  2.1 [Examples of Row, Column, Grid, LazyGrid layouts, etc](LayoutExample)
 
