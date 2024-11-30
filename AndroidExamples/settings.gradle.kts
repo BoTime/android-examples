@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TextExample"
-include(":app")
- 
+rootProject.name = "AndroidExamples"
+include(":TextInputExample")
+include(":myNavigation")

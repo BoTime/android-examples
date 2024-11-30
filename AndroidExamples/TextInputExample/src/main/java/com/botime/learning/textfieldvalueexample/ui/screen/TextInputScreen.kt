@@ -1,10 +1,5 @@
-package com.botime.learning.textfieldvalueexample
+package com.botime.learning.textfieldvalueexample.ui.screen
 
-import android.annotation.SuppressLint
-import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
@@ -41,27 +36,10 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.lifecycle.ViewModel
-import com.botime.learning.textfieldvalueexample.ui.theme.TextFieldValueExampleTheme
-
-class MainActivity : ComponentActivity() {
-    @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-
-        setContent {
-            TextFieldValueExampleTheme {
-                Scaffold { innerPadding ->
-                    Screen(innerPadding)
-                }
-            }
-        }
-    }
-}
+import com.botime.learning.textfieldvalueexample.R
 
 @Composable
-fun Screen(innerPadding: PaddingValues) {
+fun TextInputScreen(innerPadding: PaddingValues) {
     val rainbowColors = listOf(
         Color(0xFFFF0000),
         Color(0xFFFF7F00),
@@ -74,7 +52,7 @@ fun Screen(innerPadding: PaddingValues) {
 
     Column(
         modifier = Modifier
-            .background(color = Color.Black)
+            .background(color = Color.White)
             .padding(innerPadding)
             .fillMaxWidth(),
         verticalArrangement = Arrangement.spacedBy(5.dp)
@@ -234,13 +212,12 @@ fun Example(
         )
         customization()
     }
-
 }
 
 @Preview(showBackground = true)
 @Composable
 fun ScreenPreview() {
     Scaffold { innerPadding ->
-        Screen(innerPadding)
+        TextInputScreen(innerPadding)
     }
 }
